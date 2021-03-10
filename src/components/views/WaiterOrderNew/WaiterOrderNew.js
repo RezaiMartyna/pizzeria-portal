@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './WaiterOrderNew.module.scss';
 
-const Waiter = () => (
+const WaiterOrderNew = () => (
   <div className={styles.component}>
-    <h2>Waiter view</h2>
+    <h2>Waiter Order New</h2>
   </div>
 );
 
-export default Waiter;
+export default WaiterOrderNew;

@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Tables.module.scss';
 import { Link } from 'react-router-dom';
 
+
 const Tables = () => (
   <div className={styles.component}>
     <h2>Tables view</h2>
@@ -11,5 +12,7 @@ const Tables = () => (
     <Link to={`${process.env.PUBLIC_URL}/tables/events/new`} activeClassName='active'>Table Events New</Link>
   </div>
 );
+
+
 
 export default Tables;
