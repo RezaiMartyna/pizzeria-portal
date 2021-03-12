@@ -16,21 +16,21 @@
   - ma przypominać widok tygodnia w kalendarzu googla gdzię w kolumach zamiast dni są różne stoliki
   - po kliknięciu rezerwacji lub eventu przechodzimy do strony szczegółó
 -`/tables/booking/:id`
- - zawiera wszystkie inforacje dotyczace rezerwacjoi
+ - zawiera wszystkie inforacje dotyczace rezerwacji
  - umozliwia edycje i zapisanie zmian
 -`/tables/booking/new`
- - analogicznie do powzej bez pcozątjowych informacji
+ - analogicznie do powzej bez początkowych informacji
 -`/tables/events/:id`
- - analogicznie do powzej bez pcozątjowych informacji
+ - analogicznie do powzej bez początkowych informacji
 -`/tables/events/new`
- - analogicznie do powzej bez pcozątjowych informacji
+ - analogicznie do powzej bez początkowych informacji
 
 # widok kelnera
 -`/waiter`
  - tabela
-  - wiersze wyswitlaja stoliki
-  - kolumny rozne rodzaje informacji (status, czas od osttaniej aktywnosci )
-  - w osttaniej kolumnie dostępne akcje dla danego stolika
+  - wiersze wyswietlaja stoliki
+  - kolumny rozne rodzaje informacji (status, czas od ostaniej aktywnosci )
+  - w ostaniej kolumnie dostępne akcje dla danego stolika
 -`/waiter/order/new`
  - number stolika (edytowalny)
  - menu produktów

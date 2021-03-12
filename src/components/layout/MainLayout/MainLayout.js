@@ -6,18 +6,18 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Container from '@material-ui/core/Container';
 
 
-const MainLayout = ({children}) => (
+const MainLayout = ({ children }) => (
 
   <div className="MainLayout">
     <AppBar>
-      <Toolbar disableGutters>
-        <Container maxWidt='lg'>
-          <PageNav/>
-        </Container>
-      </Toolbar>
+      <Container maxWidt='lg'>
+        <Toolbar disableGutters>
+          <PageNav />
+        </Toolbar>
+      </Container>
     </AppBar>
-    <Toolbar />
     <Container maxWidth='lg'>
+      <Toolbar />
       {children}
     </Container>
   </div>

@@ -10,6 +10,9 @@ const TablesBookingId = (props) => {
     <div className={styles.component}>
       <h2>Tables Booking ID</h2>
       {props.match.params.id}
+
+      - zawiera wszystkie inforacje dotyczace rezerwacjoi
+      - umozliwia edycje i zapisanie zmian
     </div>
   );
 };
