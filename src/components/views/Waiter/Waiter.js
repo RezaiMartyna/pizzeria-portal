@@ -33,33 +33,46 @@ class Waiter extends React.Component {
             <Button onClick= {()=>this.props.updateTableStatus(ID, 'thinking')}>
               thinking
             </Button>
-            <Button>new order</Button>
+            <Button onClick= {()=>this.props.updateTableStatus(ID, 'new order')}>
+              new order
+            </Button>
           </>
         );
       case 'thinking':
         return (
-          <Button>new order</Button>
+          <Button onClick= {()=>this.props.updateTableStatus(ID, 'new order')}>
+            new Order
+          </Button>
         );
       case 'ordered':
         return (
-          <Button>prepared</Button>
+          <Button onClick= {()=>this.props.updateTableStatus(ID, 'prepared')}>
+            prepared
+          </Button>
         );
       case 'prepared':
         return (
-          <Button>delivered</Button>
+          <Button onClick= {()=>this.props.updateTableStatus(ID, 'delivered')}>
+            delivered
+          </Button>
         );
       case 'delivered':
         return (
-          <Button>paid</Button>
+          <Button onClick= {()=>this.props.updateTableStatus(ID, 'paid')}>
+            paid
+          </Button>
         );
       case 'paid':
         return (
-          <Button>free</Button>
+          <Button onClick= {()=>this.props.updateTableStatus(ID, 'free')}>
+            free
+          </Button>
         );
       default:
         return null;
     }
   }
+
 
   render() {
     const { loading: { active, error }, tables } = this.props;
