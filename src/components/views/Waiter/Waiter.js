@@ -17,6 +17,7 @@ class Waiter extends React.Component {
       error: PropTypes.oneOfType([PropTypes.bool,PropTypes.string]),
     }),
     tables: PropTypes.any,
+    updateTableStatus: PropTypes.func,
   }
 
   componentDidMount(){
@@ -24,12 +25,14 @@ class Waiter extends React.Component {
     fetchTables();
   }
 
-  renderActions(status){
+  renderActions(status, ID){
     switch (status) {
       case 'free':
         return (
           <>
-            <Button>thinking</Button>
+            <Button onClick= {()=>this.props.updateTableStatus(ID, 'thinking')}>
+              thinking
+            </Button>
             <Button>new order</Button>
           </>
         );
@@ -103,7 +106,7 @@ class Waiter extends React.Component {
                     )}
                   </TableCell>
                   <TableCell>
-                    {this.renderActions(row.status)}
+                    {this.renderActions(row.status, row.id)}
                   </TableCell>
                 </TableRow>
               ))}
